@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<playground version='6.0' target-platform='ios' display-mode='raw'>
+    <pages>
+        <page name='练习'/>
+        <page name='眼前一亮的初始化'/>
+        <page name='CAGradientLayer'/>
+        <page name='度量单位'/>
+        <page name='Logger'/>
+        <page name='Then'/>
+        <page name='With'/>
+        <page name='storyBoard'/>
+        <page name='新特性'/>
+        <page name='GCD'/>
+        <page name='String'/>
+        <page name='Tuples'/>
+        <page name='基本操作'/>
+        <page name='Markdown'/>
+        <page name='Array'/>
+        <page name='Dictionary'/>
+        <page name='字典和哈希,自定义类型'/>
+        <page name='Set'/>
+        <page name='Rang 和Collection的关系'/>
+        <page name='样式匹配'/>
+        <page name='函数(签名)'/>
+        <page name='Closure'/>
+        <page name='捕获变量共享资源'/>
+        <page name='运行时特性'/>
+        <page name='inout参数'/>
+        <page name='哨兵值'/>
+        <page name='Optional'/>
+        <page name='认识Swift指针家族类型'/>
+        <page name='C指针是如何桥接到Swift的'/>
+        <page name='关于C中的字符串指针'/>
+        <page name='swift4 新特性'/>
+        <page name='派生model编解码'/>
+        <page name='model兼容多个版本的API'/>
+    </pages>
+</playground>
