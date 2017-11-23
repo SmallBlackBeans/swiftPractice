@@ -23,6 +23,7 @@ class CGSimpleView: UIView {
         
         context?.closePath()
         
+        
         UIColor.red.setStroke()
         UIColor.yellow.setFill()
         
