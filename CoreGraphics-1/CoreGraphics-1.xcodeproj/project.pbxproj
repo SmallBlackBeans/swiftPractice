@@ -15,6 +15,7 @@
 		1E1E4EC01FC6B22A00FCC47E /* CoreGraphics_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1E4EBF1FC6B22A00FCC47E /* CoreGraphics_1Tests.swift */; };
 		1E1E4ECB1FC6B22A00FCC47E /* CoreGraphics_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1E4ECA1FC6B22A00FCC47E /* CoreGraphics_1UITests.swift */; };
 		1E1E4ED91FC6B2AE00FCC47E /* CGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1E4ED81FC6B2AE00FCC47E /* CGView.swift */; };
+		1E372B2C1FC71BB1008C9F85 /* CGSimpleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E372B2B1FC71BB1008C9F85 /* CGSimpleView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		1E1E4ECA1FC6B22A00FCC47E /* CoreGraphics_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreGraphics_1UITests.swift; sourceTree = "<group>"; };
 		1E1E4ECC1FC6B22A00FCC47E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E1E4ED81FC6B2AE00FCC47E /* CGView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGView.swift; sourceTree = "<group>"; };
+		1E372B2B1FC71BB1008C9F85 /* CGSimpleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGSimpleView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				1E1E4EB31FC6B22A00FCC47E /* LaunchScreen.storyboard */,
 				1E1E4EB61FC6B22A00FCC47E /* Info.plist */,
 				1E1E4ED81FC6B2AE00FCC47E /* CGView.swift */,
+				1E372B2B1FC71BB1008C9F85 /* CGSimpleView.swift */,
 			);
 			path = "CoreGraphics-1";
 			sourceTree = "<group>";
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E372B2C1FC71BB1008C9F85 /* CGSimpleView.swift in Sources */,
 				1E1E4ED91FC6B2AE00FCC47E /* CGView.swift in Sources */,
 				1E1E4EAD1FC6B22900FCC47E /* ViewController.swift in Sources */,
 				1E1E4EAB1FC6B22900FCC47E /* AppDelegate.swift in Sources */,
