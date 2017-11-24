@@ -12,9 +12,20 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.addSubview(cgView)
+        //self.view.addSubview(cgView)
+        //self.view.addSubview(drawView)
+        //view.addSubview(textView)
+        view.addSubview(imageView)
+        //view.addSubview(gradient)
+        //view.addSubview(transformView)
     }
     
+    
+    
+    lazy var transformView: CGTransformView = {
+        let trans = CGTransformView.init(frame: view.bounds)
+        return trans
+    }()
     
     lazy var cgView: CGView = {
         let cgView = CGView()
@@ -23,6 +34,28 @@ class ViewController: UIViewController {
         return cgView
     }()
 
+    
+    lazy var drawView: CGDrawView = {
+        let draw = CGDrawView.init(frame: self.view.bounds)
+        return draw
+    }()
+    
+    
+    lazy var textView: CGTextView = {
+        let text = CGTextView.init(frame: self.view.bounds)
+        return text
+    }()
+    
+    lazy var imageView: CGImageView = {
+        let image = CGImageView.init(frame: view.bounds)
+        return image
+    }()
+    
+    lazy var gradient: CGGradienView = {
+        let gradient = CGGradienView.init(frame: view.bounds)
+        return gradient
+    }()
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.

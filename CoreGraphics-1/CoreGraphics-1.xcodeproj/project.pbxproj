@@ -15,7 +15,14 @@
 		1E1E4EC01FC6B22A00FCC47E /* CoreGraphics_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1E4EBF1FC6B22A00FCC47E /* CoreGraphics_1Tests.swift */; };
 		1E1E4ECB1FC6B22A00FCC47E /* CoreGraphics_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1E4ECA1FC6B22A00FCC47E /* CoreGraphics_1UITests.swift */; };
 		1E1E4ED91FC6B2AE00FCC47E /* CGView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1E4ED81FC6B2AE00FCC47E /* CGView.swift */; };
-		1E372B2C1FC71BB1008C9F85 /* CGSimpleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E372B2B1FC71BB1008C9F85 /* CGSimpleView.swift */; };
+		1E369F271FC7C5270030E310 /* CGBlendModeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E369F261FC7C5270030E310 /* CGBlendModeView.swift */; };
+		1E369F291FC7C6870030E310 /* CGTransformView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E369F281FC7C6870030E310 /* CGTransformView.swift */; };
+		1EB950881FC7AFD400A2F7AC /* CGDrawView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB950871FC7AFD400A2F7AC /* CGDrawView.swift */; };
+		1EB9508C1FC7B66600A2F7AC /* CGTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB9508B1FC7B66600A2F7AC /* CGTextView.swift */; };
+		1EB9508E1FC7B86100A2F7AC /* CGImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB9508D1FC7B86100A2F7AC /* CGImageView.swift */; };
+		1EB950901FC7B8B300A2F7AC /* timg.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 1EB9508F1FC7B8B300A2F7AC /* timg.jpeg */; };
+		1EB950921FC7B9D600A2F7AC /* CGGradienView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB950911FC7B9D600A2F7AC /* CGGradienView.swift */; };
+		1EB950941FC7C0ED00A2F7AC /* CGRadialGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EB950931FC7C0ED00A2F7AC /* CGRadialGradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +57,14 @@
 		1E1E4ECA1FC6B22A00FCC47E /* CoreGraphics_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreGraphics_1UITests.swift; sourceTree = "<group>"; };
 		1E1E4ECC1FC6B22A00FCC47E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E1E4ED81FC6B2AE00FCC47E /* CGView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGView.swift; sourceTree = "<group>"; };
-		1E372B2B1FC71BB1008C9F85 /* CGSimpleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGSimpleView.swift; sourceTree = "<group>"; };
+		1E369F261FC7C5270030E310 /* CGBlendModeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGBlendModeView.swift; sourceTree = "<group>"; };
+		1E369F281FC7C6870030E310 /* CGTransformView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGTransformView.swift; sourceTree = "<group>"; };
+		1EB950871FC7AFD400A2F7AC /* CGDrawView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGDrawView.swift; sourceTree = "<group>"; };
+		1EB9508B1FC7B66600A2F7AC /* CGTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGTextView.swift; sourceTree = "<group>"; };
+		1EB9508D1FC7B86100A2F7AC /* CGImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGImageView.swift; sourceTree = "<group>"; };
+		1EB9508F1FC7B8B300A2F7AC /* timg.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = timg.jpeg; sourceTree = "<group>"; };
+		1EB950911FC7B9D600A2F7AC /* CGGradienView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGGradienView.swift; sourceTree = "<group>"; };
+		1EB950931FC7C0ED00A2F7AC /* CGRadialGradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CGRadialGradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +115,7 @@
 		1E1E4EA91FC6B22900FCC47E /* CoreGraphics-1 */ = {
 			isa = PBXGroup;
 			children = (
+				1EB9508F1FC7B8B300A2F7AC /* timg.jpeg */,
 				1E1E4EAA1FC6B22900FCC47E /* AppDelegate.swift */,
 				1E1E4EAC1FC6B22900FCC47E /* ViewController.swift */,
 				1E1E4EAE1FC6B22A00FCC47E /* Main.storyboard */,
@@ -108,7 +123,13 @@
 				1E1E4EB31FC6B22A00FCC47E /* LaunchScreen.storyboard */,
 				1E1E4EB61FC6B22A00FCC47E /* Info.plist */,
 				1E1E4ED81FC6B2AE00FCC47E /* CGView.swift */,
-				1E372B2B1FC71BB1008C9F85 /* CGSimpleView.swift */,
+				1EB950871FC7AFD400A2F7AC /* CGDrawView.swift */,
+				1EB9508B1FC7B66600A2F7AC /* CGTextView.swift */,
+				1EB9508D1FC7B86100A2F7AC /* CGImageView.swift */,
+				1EB950911FC7B9D600A2F7AC /* CGGradienView.swift */,
+				1EB950931FC7C0ED00A2F7AC /* CGRadialGradientView.swift */,
+				1E369F261FC7C5270030E310 /* CGBlendModeView.swift */,
+				1E369F281FC7C6870030E310 /* CGTransformView.swift */,
 			);
 			path = "CoreGraphics-1";
 			sourceTree = "<group>";
@@ -240,6 +261,7 @@
 			files = (
 				1E1E4EB51FC6B22A00FCC47E /* LaunchScreen.storyboard in Resources */,
 				1E1E4EB21FC6B22A00FCC47E /* Assets.xcassets in Resources */,
+				1EB950901FC7B8B300A2F7AC /* timg.jpeg in Resources */,
 				1E1E4EB01FC6B22A00FCC47E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -265,9 +287,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E372B2C1FC71BB1008C9F85 /* CGSimpleView.swift in Sources */,
+				1EB950881FC7AFD400A2F7AC /* CGDrawView.swift in Sources */,
+				1E369F291FC7C6870030E310 /* CGTransformView.swift in Sources */,
+				1EB9508C1FC7B66600A2F7AC /* CGTextView.swift in Sources */,
+				1EB950921FC7B9D600A2F7AC /* CGGradienView.swift in Sources */,
 				1E1E4ED91FC6B2AE00FCC47E /* CGView.swift in Sources */,
 				1E1E4EAD1FC6B22900FCC47E /* ViewController.swift in Sources */,
+				1E369F271FC7C5270030E310 /* CGBlendModeView.swift in Sources */,
+				1EB950941FC7C0ED00A2F7AC /* CGRadialGradientView.swift in Sources */,
+				1EB9508E1FC7B86100A2F7AC /* CGImageView.swift in Sources */,
 				1E1E4EAB1FC6B22900FCC47E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
