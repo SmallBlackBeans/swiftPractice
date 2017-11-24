@@ -15,6 +15,7 @@
 		1E0A3DBF1FC5166D00B19E58 /* ExtensionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0A3DBE1FC5166D00B19E58 /* ExtensionTests.swift */; };
 		1E0A3DCA1FC5166D00B19E58 /* ExtensionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0A3DC91FC5166D00B19E58 /* ExtensionUITests.swift */; };
 		1E369F2B1FC7E4430030E310 /* String+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E369F2A1FC7E4430030E310 /* String+Extension.swift */; };
+		1E369F2D1FC7EE1A0030E310 /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E369F2C1FC7EE1A0030E310 /* UITableViewCell+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		1E0A3DC91FC5166D00B19E58 /* ExtensionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionUITests.swift; sourceTree = "<group>"; };
 		1E0A3DCB1FC5166D00B19E58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E369F2A1FC7E4430030E310 /* String+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extension.swift"; sourceTree = "<group>"; };
+		1E369F2C1FC7EE1A0030E310 /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				1E0A3DB21FC5166D00B19E58 /* LaunchScreen.storyboard */,
 				1E0A3DB51FC5166D00B19E58 /* Info.plist */,
 				1E369F2A1FC7E4430030E310 /* String+Extension.swift */,
+				1E369F2C1FC7EE1A0030E310 /* UITableViewCell+Extension.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -265,6 +268,7 @@
 				1E0A3DAC1FC5166D00B19E58 /* ViewController.swift in Sources */,
 				1E369F2B1FC7E4430030E310 /* String+Extension.swift in Sources */,
 				1E0A3DAA1FC5166D00B19E58 /* AppDelegate.swift in Sources */,
+				1E369F2D1FC7EE1A0030E310 /* UITableViewCell+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,0 +1,808 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0D70F35767E80F32EFFD64D7 /* Pods_ReactSwift_ReactSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A188F6C8DB2C7819598BDDD3 /* Pods_ReactSwift_ReactSwiftTests.framework */; };
+		1E751D511FC822EA00B0D9CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E751D501FC822EA00B0D9CD /* AppDelegate.swift */; };
+		1E751D531FC822EA00B0D9CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E751D521FC822EA00B0D9CD /* ViewController.swift */; };
+		1E751D561FC822EA00B0D9CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E751D541FC822EA00B0D9CD /* Main.storyboard */; };
+		1E751D581FC822EA00B0D9CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E751D571FC822EA00B0D9CD /* Assets.xcassets */; };
+		1E751D5B1FC822EA00B0D9CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E751D591FC822EA00B0D9CD /* LaunchScreen.storyboard */; };
+		1E751D661FC822EB00B0D9CD /* ReactSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E751D651FC822EB00B0D9CD /* ReactSwiftTests.swift */; };
+		1E751D711FC822EB00B0D9CD /* ReactSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E751D701FC822EB00B0D9CD /* ReactSwiftUITests.swift */; };
+		9AFDA659052B452C5C5A2E4E /* Pods_ReactSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1700DE1AABDED4904964CEBC /* Pods_ReactSwift.framework */; };
+		DF4E66FC1610AE7CFA13DFB4 /* Pods_ReactSwift_ReactSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29F4E2E55098261014377FB /* Pods_ReactSwift_ReactSwiftUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1E751D621FC822EB00B0D9CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E751D451FC822EA00B0D9CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E751D4C1FC822EA00B0D9CD;
+			remoteInfo = ReactSwift;
+		};
+		1E751D6D1FC822EB00B0D9CD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E751D451FC822EA00B0D9CD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E751D4C1FC822EA00B0D9CD;
+			remoteInfo = ReactSwift;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1700DE1AABDED4904964CEBC /* Pods_ReactSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E751D4D1FC822EA00B0D9CD /* ReactSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E751D501FC822EA00B0D9CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1E751D521FC822EA00B0D9CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1E751D551FC822EA00B0D9CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1E751D571FC822EA00B0D9CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1E751D5A1FC822EA00B0D9CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1E751D5C1FC822EB00B0D9CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E751D611FC822EB00B0D9CD /* ReactSwiftTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactSwiftTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E751D651FC822EB00B0D9CD /* ReactSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactSwiftTests.swift; sourceTree = "<group>"; };
+		1E751D671FC822EB00B0D9CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E751D6C1FC822EB00B0D9CD /* ReactSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E751D701FC822EB00B0D9CD /* ReactSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactSwiftUITests.swift; sourceTree = "<group>"; };
+		1E751D721FC822EB00B0D9CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2F52DF6709BFE1A936A770FF /* Pods-ReactSwift-ReactSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactSwift-ReactSwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactSwift-ReactSwiftTests/Pods-ReactSwift-ReactSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
+		35EAA29AFF579E15AAE12A38 /* Pods-ReactSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactSwift/Pods-ReactSwift.release.xcconfig"; sourceTree = "<group>"; };
+		80B2746B7CE919FE6669E946 /* Pods-ReactSwift-ReactSwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactSwift-ReactSwiftUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactSwift-ReactSwiftUITests/Pods-ReactSwift-ReactSwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		A01D83207573BB0CD5500D7A /* Pods-ReactSwift-ReactSwiftUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactSwift-ReactSwiftUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactSwift-ReactSwiftUITests/Pods-ReactSwift-ReactSwiftUITests.release.xcconfig"; sourceTree = "<group>"; };
+		A188F6C8DB2C7819598BDDD3 /* Pods_ReactSwift_ReactSwiftTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactSwift_ReactSwiftTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A29F4E2E55098261014377FB /* Pods_ReactSwift_ReactSwiftUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactSwift_ReactSwiftUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B356763AD92B7BBACD086175 /* Pods-ReactSwift-ReactSwiftTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactSwift-ReactSwiftTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactSwift-ReactSwiftTests/Pods-ReactSwift-ReactSwiftTests.release.xcconfig"; sourceTree = "<group>"; };
+		D76F48FF86E899791C05B997 /* Pods-ReactSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactSwift.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactSwift/Pods-ReactSwift.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1E751D4A1FC822EA00B0D9CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9AFDA659052B452C5C5A2E4E /* Pods_ReactSwift.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E751D5E1FC822EB00B0D9CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0D70F35767E80F32EFFD64D7 /* Pods_ReactSwift_ReactSwiftTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E751D691FC822EB00B0D9CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DF4E66FC1610AE7CFA13DFB4 /* Pods_ReactSwift_ReactSwiftUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E751D441FC822EA00B0D9CD = {
+			isa = PBXGroup;
+			children = (
+				1E751D4F1FC822EA00B0D9CD /* ReactSwift */,
+				1E751D641FC822EB00B0D9CD /* ReactSwiftTests */,
+				1E751D6F1FC822EB00B0D9CD /* ReactSwiftUITests */,
+				1E751D4E1FC822EA00B0D9CD /* Products */,
+				3780FD3C5A120526B65CFF13 /* Pods */,
+				233992883B98DEB1E2778D6C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1E751D4E1FC822EA00B0D9CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1E751D4D1FC822EA00B0D9CD /* ReactSwift.app */,
+				1E751D611FC822EB00B0D9CD /* ReactSwiftTests.xctest */,
+				1E751D6C1FC822EB00B0D9CD /* ReactSwiftUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1E751D4F1FC822EA00B0D9CD /* ReactSwift */ = {
+			isa = PBXGroup;
+			children = (
+				1E751D501FC822EA00B0D9CD /* AppDelegate.swift */,
+				1E751D521FC822EA00B0D9CD /* ViewController.swift */,
+				1E751D541FC822EA00B0D9CD /* Main.storyboard */,
+				1E751D571FC822EA00B0D9CD /* Assets.xcassets */,
+				1E751D591FC822EA00B0D9CD /* LaunchScreen.storyboard */,
+				1E751D5C1FC822EB00B0D9CD /* Info.plist */,
+			);
+			path = ReactSwift;
+			sourceTree = "<group>";
+		};
+		1E751D641FC822EB00B0D9CD /* ReactSwiftTests */ = {
+			isa = PBXGroup;
+			children = (
+				1E751D651FC822EB00B0D9CD /* ReactSwiftTests.swift */,
+				1E751D671FC822EB00B0D9CD /* Info.plist */,
+			);
+			path = ReactSwiftTests;
+			sourceTree = "<group>";
+		};
+		1E751D6F1FC822EB00B0D9CD /* ReactSwiftUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1E751D701FC822EB00B0D9CD /* ReactSwiftUITests.swift */,
+				1E751D721FC822EB00B0D9CD /* Info.plist */,
+			);
+			path = ReactSwiftUITests;
+			sourceTree = "<group>";
+		};
+		233992883B98DEB1E2778D6C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1700DE1AABDED4904964CEBC /* Pods_ReactSwift.framework */,
+				A188F6C8DB2C7819598BDDD3 /* Pods_ReactSwift_ReactSwiftTests.framework */,
+				A29F4E2E55098261014377FB /* Pods_ReactSwift_ReactSwiftUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3780FD3C5A120526B65CFF13 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D76F48FF86E899791C05B997 /* Pods-ReactSwift.debug.xcconfig */,
+				35EAA29AFF579E15AAE12A38 /* Pods-ReactSwift.release.xcconfig */,
+				2F52DF6709BFE1A936A770FF /* Pods-ReactSwift-ReactSwiftTests.debug.xcconfig */,
+				B356763AD92B7BBACD086175 /* Pods-ReactSwift-ReactSwiftTests.release.xcconfig */,
+				80B2746B7CE919FE6669E946 /* Pods-ReactSwift-ReactSwiftUITests.debug.xcconfig */,
+				A01D83207573BB0CD5500D7A /* Pods-ReactSwift-ReactSwiftUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1E751D4C1FC822EA00B0D9CD /* ReactSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E751D751FC822EB00B0D9CD /* Build configuration list for PBXNativeTarget "ReactSwift" */;
+			buildPhases = (
+				B8E1095C28C34EC04D7B90FD /* [CP] Check Pods Manifest.lock */,
+				1E751D491FC822EA00B0D9CD /* Sources */,
+				1E751D4A1FC822EA00B0D9CD /* Frameworks */,
+				1E751D4B1FC822EA00B0D9CD /* Resources */,
+				DE9902F6D4F850906D08A030 /* [CP] Embed Pods Frameworks */,
+				755297D09F28087B0FA87A28 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ReactSwift;
+			productName = ReactSwift;
+			productReference = 1E751D4D1FC822EA00B0D9CD /* ReactSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1E751D601FC822EB00B0D9CD /* ReactSwiftTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E751D781FC822EB00B0D9CD /* Build configuration list for PBXNativeTarget "ReactSwiftTests" */;
+			buildPhases = (
+				77CD9CEA9F81D74D864830D8 /* [CP] Check Pods Manifest.lock */,
+				1E751D5D1FC822EB00B0D9CD /* Sources */,
+				1E751D5E1FC822EB00B0D9CD /* Frameworks */,
+				1E751D5F1FC822EB00B0D9CD /* Resources */,
+				782C5DA271DCE4A199DF2D4D /* [CP] Embed Pods Frameworks */,
+				6AA50E6D8BA4C05606DD5196 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E751D631FC822EB00B0D9CD /* PBXTargetDependency */,
+			);
+			name = ReactSwiftTests;
+			productName = ReactSwiftTests;
+			productReference = 1E751D611FC822EB00B0D9CD /* ReactSwiftTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1E751D6B1FC822EB00B0D9CD /* ReactSwiftUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E751D7B1FC822EB00B0D9CD /* Build configuration list for PBXNativeTarget "ReactSwiftUITests" */;
+			buildPhases = (
+				492B376093B750DC866FA434 /* [CP] Check Pods Manifest.lock */,
+				1E751D681FC822EB00B0D9CD /* Sources */,
+				1E751D691FC822EB00B0D9CD /* Frameworks */,
+				1E751D6A1FC822EB00B0D9CD /* Resources */,
+				68509068076DF54DAAE38D91 /* [CP] Embed Pods Frameworks */,
+				8BCFD3BDE361445F49166E17 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E751D6E1FC822EB00B0D9CD /* PBXTargetDependency */,
+			);
+			name = ReactSwiftUITests;
+			productName = ReactSwiftUITests;
+			productReference = 1E751D6C1FC822EB00B0D9CD /* ReactSwiftUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1E751D451FC822EA00B0D9CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0910;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = "韩承海";
+				TargetAttributes = {
+					1E751D4C1FC822EA00B0D9CD = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+					1E751D601FC822EB00B0D9CD = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1E751D4C1FC822EA00B0D9CD;
+					};
+					1E751D6B1FC822EB00B0D9CD = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 1E751D4C1FC822EA00B0D9CD;
+					};
+				};
+			};
+			buildConfigurationList = 1E751D481FC822EA00B0D9CD /* Build configuration list for PBXProject "ReactSwift" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1E751D441FC822EA00B0D9CD;
+			productRefGroup = 1E751D4E1FC822EA00B0D9CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1E751D4C1FC822EA00B0D9CD /* ReactSwift */,
+				1E751D601FC822EB00B0D9CD /* ReactSwiftTests */,
+				1E751D6B1FC822EB00B0D9CD /* ReactSwiftUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1E751D4B1FC822EA00B0D9CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E751D5B1FC822EA00B0D9CD /* LaunchScreen.storyboard in Resources */,
+				1E751D581FC822EA00B0D9CD /* Assets.xcassets in Resources */,
+				1E751D561FC822EA00B0D9CD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E751D5F1FC822EB00B0D9CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E751D6A1FC822EB00B0D9CD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		492B376093B750DC866FA434 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReactSwift-ReactSwiftUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		68509068076DF54DAAE38D91 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ReactSwift-ReactSwiftUITests/Pods-ReactSwift-ReactSwiftUITests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactSwift-ReactSwiftUITests/Pods-ReactSwift-ReactSwiftUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6AA50E6D8BA4C05606DD5196 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactSwift-ReactSwiftTests/Pods-ReactSwift-ReactSwiftTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		755297D09F28087B0FA87A28 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactSwift/Pods-ReactSwift-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77CD9CEA9F81D74D864830D8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReactSwift-ReactSwiftTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		782C5DA271DCE4A199DF2D4D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ReactSwift-ReactSwiftTests/Pods-ReactSwift-ReactSwiftTests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
+				"${BUILT_PRODUCTS_DIR}/RxTest/RxTest.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxTest.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactSwift-ReactSwiftTests/Pods-ReactSwift-ReactSwiftTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BCFD3BDE361445F49166E17 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactSwift-ReactSwiftUITests/Pods-ReactSwift-ReactSwiftUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B8E1095C28C34EC04D7B90FD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ReactSwift-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE9902F6D4F850906D08A030 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ReactSwift/Pods-ReactSwift-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactSwift/Pods-ReactSwift-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1E751D491FC822EA00B0D9CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E751D531FC822EA00B0D9CD /* ViewController.swift in Sources */,
+				1E751D511FC822EA00B0D9CD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E751D5D1FC822EB00B0D9CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E751D661FC822EB00B0D9CD /* ReactSwiftTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E751D681FC822EB00B0D9CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E751D711FC822EB00B0D9CD /* ReactSwiftUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1E751D631FC822EB00B0D9CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E751D4C1FC822EA00B0D9CD /* ReactSwift */;
+			targetProxy = 1E751D621FC822EB00B0D9CD /* PBXContainerItemProxy */;
+		};
+		1E751D6E1FC822EB00B0D9CD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E751D4C1FC822EA00B0D9CD /* ReactSwift */;
+			targetProxy = 1E751D6D1FC822EB00B0D9CD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1E751D541FC822EA00B0D9CD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E751D551FC822EA00B0D9CD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1E751D591FC822EA00B0D9CD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E751D5A1FC822EA00B0D9CD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1E751D731FC822EB00B0D9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1E751D741FC822EB00B0D9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1E751D761FC822EB00B0D9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D76F48FF86E899791C05B997 /* Pods-ReactSwift.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KAYVKT322E;
+				INFOPLIST_FILE = ReactSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mhfq.rxSwfit.ReactSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1E751D771FC822EB00B0D9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 35EAA29AFF579E15AAE12A38 /* Pods-ReactSwift.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KAYVKT322E;
+				INFOPLIST_FILE = ReactSwift/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mhfq.rxSwfit.ReactSwift;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		1E751D791FC822EB00B0D9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F52DF6709BFE1A936A770FF /* Pods-ReactSwift-ReactSwiftTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KAYVKT322E;
+				INFOPLIST_FILE = ReactSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mhfq.rxSwfit.ReactSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactSwift.app/ReactSwift";
+			};
+			name = Debug;
+		};
+		1E751D7A1FC822EB00B0D9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B356763AD92B7BBACD086175 /* Pods-ReactSwift-ReactSwiftTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KAYVKT322E;
+				INFOPLIST_FILE = ReactSwiftTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mhfq.rxSwfit.ReactSwiftTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ReactSwift.app/ReactSwift";
+			};
+			name = Release;
+		};
+		1E751D7C1FC822EB00B0D9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80B2746B7CE919FE6669E946 /* Pods-ReactSwift-ReactSwiftUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KAYVKT322E;
+				INFOPLIST_FILE = ReactSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mhfq.rxSwfit.ReactSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ReactSwift;
+			};
+			name = Debug;
+		};
+		1E751D7D1FC822EB00B0D9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A01D83207573BB0CD5500D7A /* Pods-ReactSwift-ReactSwiftUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = "$(inherited)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = KAYVKT322E;
+				INFOPLIST_FILE = ReactSwiftUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mhfq.rxSwfit.ReactSwiftUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ReactSwift;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1E751D481FC822EA00B0D9CD /* Build configuration list for PBXProject "ReactSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E751D731FC822EB00B0D9CD /* Debug */,
+				1E751D741FC822EB00B0D9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E751D751FC822EB00B0D9CD /* Build configuration list for PBXNativeTarget "ReactSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E751D761FC822EB00B0D9CD /* Debug */,
+				1E751D771FC822EB00B0D9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E751D781FC822EB00B0D9CD /* Build configuration list for PBXNativeTarget "ReactSwiftTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E751D791FC822EB00B0D9CD /* Debug */,
+				1E751D7A1FC822EB00B0D9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E751D7B1FC822EB00B0D9CD /* Build configuration list for PBXNativeTarget "ReactSwiftUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E751D7C1FC822EB00B0D9CD /* Debug */,
+				1E751D7D1FC822EB00B0D9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1E751D451FC822EA00B0D9CD /* Project object */;
+}
