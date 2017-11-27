@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E24A6D51FCBA44A00D2F47D /* XHDAVplayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E24A6D41FCBA44A00D2F47D /* XHDAVplayerView.swift */; };
 		1E8796C11FCB08B9009B27A3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8796C01FCB08B9009B27A3 /* AppDelegate.swift */; };
 		1E8796C31FCB08B9009B27A3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E8796C21FCB08B9009B27A3 /* ViewController.swift */; };
 		1E8796C61FCB08B9009B27A3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E8796C41FCB08B9009B27A3 /* Main.storyboard */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		17347DCB6DE0394DD92FD4BC /* Pods-AVPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AVPlayer.release.xcconfig"; path = "Pods/Target Support Files/Pods-AVPlayer/Pods-AVPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		1E24A6D41FCBA44A00D2F47D /* XHDAVplayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XHDAVplayerView.swift; sourceTree = "<group>"; };
 		1E8796BD1FCB08B9009B27A3 /* AVPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AVPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E8796C01FCB08B9009B27A3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E8796C21FCB08B9009B27A3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -95,6 +97,7 @@
 				1E8796C71FCB08B9009B27A3 /* Assets.xcassets */,
 				1E8796C91FCB08B9009B27A3 /* LaunchScreen.storyboard */,
 				1E8796CC1FCB08B9009B27A3 /* Info.plist */,
+				1E24A6D41FCBA44A00D2F47D /* XHDAVplayerView.swift */,
 			);
 			path = AVPlayer;
 			sourceTree = "<group>";
@@ -367,6 +370,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E8796C31FCB08B9009B27A3 /* ViewController.swift in Sources */,
+				1E24A6D51FCBA44A00D2F47D /* XHDAVplayerView.swift in Sources */,
 				1E8796C11FCB08B9009B27A3 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
