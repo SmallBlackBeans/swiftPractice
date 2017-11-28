@@ -1,11 +1,16 @@
 PODS:
   - Alamofire (4.5.1)
+  - Differentiator (3.0.2)
   - ReactiveSwift (3.0.0):
     - Result (~> 3.2)
   - Result (3.2.4)
   - RxBlocking (4.0.0):
     - RxSwift (~> 4.0)
   - RxCocoa (4.0.0):
+    - RxSwift (~> 4.0)
+  - RxDataSources (3.0.2):
+    - Differentiator (~> 3.0)
+    - RxCocoa (~> 4.0)
     - RxSwift (~> 4.0)
   - RxSwift (4.0.0)
   - RxTest (4.0.0):
@@ -17,20 +22,23 @@ DEPENDENCIES:
   - ReactiveSwift (~> 3.0)
   - RxBlocking (~> 4.0)
   - RxCocoa (~> 4.0)
+  - RxDataSources (~> 3.0)
   - RxSwift (~> 4.0)
   - RxTest (~> 4.0)
   - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: 2d95912bf4c34f164fdfc335872e8c312acaea4a
+  Differentiator: a87be69eba49ec4ab460c7671143ee3a9eececfd
   ReactiveSwift: d9fe0db33c1aaabecb092e8de83cf52875c0de6f
   Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
   RxBlocking: 923c2c8106d80d7c2d6b276afd66ce3b10824836
   RxCocoa: d62846ca96495d862fa4c59ea7d87e5031d7340e
+  RxDataSources: cb7c31e652a87ebb919da45f716bbb87b3765f6b
   RxSwift: fd680d75283beb5e2559486f3c0ff852f0d35334
   RxTest: 0041e792cede35e53e4749f378d21482af0e9d12
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
 
-PODFILE CHECKSUM: af9cc77680cc6d9d9e7485b4ef883a3067704601
+PODFILE CHECKSUM: e7cf6037d4647ce2c84b9b6d8c419f4c938461ed
 
 COCOAPODS: 1.3.1

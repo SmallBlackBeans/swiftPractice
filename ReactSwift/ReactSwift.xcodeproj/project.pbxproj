@@ -15,6 +15,7 @@
 		1E751D5B1FC822EA00B0D9CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E751D591FC822EA00B0D9CD /* LaunchScreen.storyboard */; };
 		1E751D661FC822EB00B0D9CD /* ReactSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E751D651FC822EB00B0D9CD /* ReactSwiftTests.swift */; };
 		1E751D711FC822EB00B0D9CD /* ReactSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E751D701FC822EB00B0D9CD /* ReactSwiftUITests.swift */; };
+		1ED2D3B61FCD25FA0098B9B1 /* RxSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED2D3B51FCD25FA0098B9B1 /* RxSwift.swift */; };
 		9AFDA659052B452C5C5A2E4E /* Pods_ReactSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1700DE1AABDED4904964CEBC /* Pods_ReactSwift.framework */; };
 		DF4E66FC1610AE7CFA13DFB4 /* Pods_ReactSwift_ReactSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29F4E2E55098261014377FB /* Pods_ReactSwift_ReactSwiftUITests.framework */; };
 /* End PBXBuildFile section */
@@ -51,6 +52,7 @@
 		1E751D6C1FC822EB00B0D9CD /* ReactSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ReactSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E751D701FC822EB00B0D9CD /* ReactSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactSwiftUITests.swift; sourceTree = "<group>"; };
 		1E751D721FC822EB00B0D9CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1ED2D3B51FCD25FA0098B9B1 /* RxSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwift.swift; sourceTree = "<group>"; };
 		2F52DF6709BFE1A936A770FF /* Pods-ReactSwift-ReactSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactSwift-ReactSwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactSwift-ReactSwiftTests/Pods-ReactSwift-ReactSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		35EAA29AFF579E15AAE12A38 /* Pods-ReactSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactSwift/Pods-ReactSwift.release.xcconfig"; sourceTree = "<group>"; };
 		80B2746B7CE919FE6669E946 /* Pods-ReactSwift-ReactSwiftUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactSwift-ReactSwiftUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactSwift-ReactSwiftUITests/Pods-ReactSwift-ReactSwiftUITests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 			children = (
 				1E751D651FC822EB00B0D9CD /* ReactSwiftTests.swift */,
 				1E751D671FC822EB00B0D9CD /* Info.plist */,
+				1ED2D3B51FCD25FA0098B9B1 /* RxSwift.swift */,
 			);
 			path = ReactSwiftTests;
 			sourceTree = "<group>";
@@ -330,18 +333,22 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ReactSwift-ReactSwiftUITests/Pods-ReactSwift-ReactSwiftUITests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
@@ -406,9 +413,11 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ReactSwift-ReactSwiftTests/Pods-ReactSwift-ReactSwiftTests-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/RxBlocking/RxBlocking.framework",
@@ -417,9 +426,11 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxBlocking.framework",
@@ -471,18 +482,22 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-ReactSwift/Pods-ReactSwift-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Differentiator/Differentiator.framework",
 				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Differentiator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
@@ -508,6 +523,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E751D661FC822EB00B0D9CD /* ReactSwiftTests.swift in Sources */,
+				1ED2D3B61FCD25FA0098B9B1 /* RxSwift.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
