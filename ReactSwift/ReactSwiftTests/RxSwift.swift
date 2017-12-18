@@ -194,16 +194,23 @@ class RxSwift: XCTestCase {
     
     
     // MARK: - Variable 封装了 BehaviorSubject。使用 variable 的好处是 variable 将不会显式的发送 Error 或者 Completed。在 deallocated 的时候，Variable 会自动的发送 complete 事件
+    //与其他Subject类型不同的是，Variable在释放的时候会发送completed事件，并且Variable对象永远不会发送error事件
     func testVariable() {
         example("variable") {
-            let disposeBag = DisposeBag()
-            let variable = Variable("z")
-            writeSequenceToConsole(name: "1", sequence: variable.asObservable()).disposed(by: disposeBag)
-            variable.value = "a"
-            variable.value = "b"
-            writeSequenceToConsole(name: "2", sequence: variable.asObservable()).disposed(by: disposeBag)
-            variable.value = "c"
-            variable.value = "d"
+//            let disposeBag = DisposeBag()
+//            let variable = Variable("z")
+//            writeSequenceToConsole(name: "1", sequence: variable.asObservable()).disposed(by: disposeBag)
+//            variable.value = "a"
+//            variable.value = "b"
+//            writeSequenceToConsole(name: "2", sequence: variable.asObservable()).disposed(by: disposeBag)
+//            variable.value = "c"
+//            variable.value = "d"
+            
+            let variable = Variable(1)//默认1
+            variable.asObservable().subscribe({ (event) in
+                print(event)
+            }).disposed(by: RxSwift.disposeBag)
+            variable.value = 2
         }
     }
     
@@ -234,6 +241,18 @@ class RxSwift: XCTestCase {
             }).subscribe({ (e) in
                 print(e)
             })
+        }
+    }
+    
+    func testFlatMapLatest() {
+        example("flatMapLatest") {
+            let seq = Observable.of(1, 2, 3)
+                .flatMapLatest { (n) -> Observable<String> in
+                    return Observable.of("\(n)a", "\(n)b") // (1)
+                }
+                .subscribe { (event) in
+                    print(event)
+            }
         }
     }
     
