@@ -9,9 +9,18 @@ pod 'ReactiveSwift', '~> 3.0'
 
 pod 'RxSwift',    '~> 4.0'
 pod 'RxCocoa',    '~> 4.0'
+pod 'RxOptional'
+pod 'NSObject+Rx'
 pod 'RxDataSources', '~> 3.0'
 
 
+
+pod 'PromiseKit'
+
+pod 'ObjectMapper'
+
+
+pod 'RxAlamofire'
 pod 'Alamofire', '~> 4.5'
 pod 'SwiftyJSON'
 

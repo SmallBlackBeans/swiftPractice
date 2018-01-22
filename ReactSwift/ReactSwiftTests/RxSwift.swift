@@ -9,7 +9,7 @@
 import XCTest
 import RxSwift
 import RxCocoa
-import RxTest
+import RxOptional
 
 
 //https://github.com/ReactiveX/RxSwift/blob/f639ff450487340a18931a7dbe3d5c8a0976be7b/CHANGELOG.md
@@ -50,6 +50,16 @@ class RxSwift: XCTestCase {
         }
     }
     
+    
+    func testrepeatElement() {
+        example("repeatElement") {
+            let repeatElementSequence = Observable.repeatElement(1)
+            repeatElementSequence.subscribe({ (e) in
+                print(e)
+            }).disposed(by: RxSwift.disposeBag)
+        }
+    }
+    
     // MARK: - 代表只包含一个元素的序列。它将向订阅者发送两个消息，第一个消息是其中元素的值，另一个是 .Completed
     func testJust() {
         example("just") {
@@ -76,6 +86,28 @@ class RxSwift: XCTestCase {
             //toObservable 过期
             let sequenceFromArray = Observable.from([1, 2, 3, 4])
             sequenceFromArray.subscribe({ (event) in
+                print(event)
+            }).disposed(by: RxSwift.disposeBag)
+        }
+    }
+    
+    func testSample() {
+        example("") {
+            Observable<Int>.interval(0.1, scheduler: SerialDispatchQueueScheduler.init(qos: .background))
+                .take(100)
+                .sample(Observable<Int>.interval(1, scheduler: SerialDispatchQueueScheduler.init(qos: .background)))
+                .subscribe {
+                    print($0)
+                }
+                .addDisposableTo(RxSwift.disposeBag)
+        }
+    }
+
+    
+    func testinterval() {
+        example("interval") {
+            let intervalSequence = Observable<Int>.interval(3, scheduler: MainScheduler.instance)
+            intervalSequence.subscribe({ (event) in
                 print(event)
             }).disposed(by: RxSwift.disposeBag)
         }
@@ -259,6 +291,7 @@ class RxSwift: XCTestCase {
     // MARK: - 对 Observable 发射的每一项数据应用一个函数，然后按顺序依次发射每一个值
     func testScan() {
         example("scan") {
+
             let sequenceToSum = Observable<Int>.of(0, 1, 2, 3, 4, 5)
             
             _ = sequenceToSum.scan(0, accumulator: { (acum, elem) -> Int in
@@ -357,6 +390,7 @@ class RxSwift: XCTestCase {
     }
     
     
+    
     // MARK: - 将两个 Observable 序列合并为一个。每当 self 队列发射一个元素时，从第二个序列中取出最新的一个值。
     func testWithLatestFrom() {
         example("withLatestFrom") {
@@ -375,6 +409,8 @@ class RxSwift: XCTestCase {
             subjectA.onNext("a4")
         }
     }
+    
+
     
     
     
@@ -465,6 +501,17 @@ class RxSwift: XCTestCase {
                 .subscribe {
                     print($0)
             }
+        }
+    }
+    
+    
+    //自动解包过滤nil
+    func testOptional() {
+        Observable<String?>
+            .of("One", "two", nil, "three")
+            .filterNil()
+            .subscribe { (event) in
+                print(event)
         }
     }
     
