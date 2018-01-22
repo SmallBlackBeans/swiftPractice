@@ -485,7 +485,13 @@ class RxSwift: XCTestCase {
     // MARK: - 合并两个或者以上的 Observable 的消息，并且这些消息的发送时间不会交叉。（队列先后顺序不会交叉）
     func testConcat() {
         example("concat") {
+            let Ob1 = Observable.of([1, 2, 3])
+            let Ob2 = Observable.of([4, 5, 6])
+            let Ob3 = Observable.of([7, 8 ,9])
             
+            Observable.concat([Ob1, Ob2, Ob3]).subscribe({ (event) in
+                print(event)
+            }).disposed(by: RxSwift.disposeBag)
             
             
             
