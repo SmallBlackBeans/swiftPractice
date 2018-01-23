@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		0D70F35767E80F32EFFD64D7 /* Pods_ReactSwift_ReactSwiftTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A188F6C8DB2C7819598BDDD3 /* Pods_ReactSwift_ReactSwiftTests.framework */; };
+		1E1FEBC5201720BC0072A156 /* RxSwiftWhyUse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1FEBC4201720BC0072A156 /* RxSwiftWhyUse.swift */; };
+		1E1FEBC9201728D20072A156 /* SafeCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1FEBC8201728D20072A156 /* SafeCollection.swift */; };
+		1E1FEBCB201729020072A156 /* CellReusable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1FEBCA201729020072A156 /* CellReusable.swift */; };
+		1E1FEBCE201731C00072A156 /* SimpleValidationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1FEBCC201731C00072A156 /* SimpleValidationViewController.swift */; };
+		1E1FEBCF201731C00072A156 /* SimpleValidationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E1FEBCD201731C00072A156 /* SimpleValidationViewController.xib */; };
+		1E1FEBD220174A070072A156 /* FunctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1FEBD020174A070072A156 /* FunctionViewController.swift */; };
+		1E1FEBD320174A070072A156 /* FunctionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E1FEBD120174A070072A156 /* FunctionViewController.xib */; };
 		1E751D511FC822EA00B0D9CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E751D501FC822EA00B0D9CD /* AppDelegate.swift */; };
 		1E751D531FC822EA00B0D9CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E751D521FC822EA00B0D9CD /* ViewController.swift */; };
 		1E751D561FC822EA00B0D9CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E751D541FC822EA00B0D9CD /* Main.storyboard */; };
@@ -45,6 +52,13 @@
 
 /* Begin PBXFileReference section */
 		1700DE1AABDED4904964CEBC /* Pods_ReactSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ReactSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E1FEBC4201720BC0072A156 /* RxSwiftWhyUse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftWhyUse.swift; sourceTree = "<group>"; };
+		1E1FEBC8201728D20072A156 /* SafeCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafeCollection.swift; sourceTree = "<group>"; };
+		1E1FEBCA201729020072A156 /* CellReusable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellReusable.swift; sourceTree = "<group>"; };
+		1E1FEBCC201731C00072A156 /* SimpleValidationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleValidationViewController.swift; sourceTree = "<group>"; };
+		1E1FEBCD201731C00072A156 /* SimpleValidationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleValidationViewController.xib; sourceTree = "<group>"; };
+		1E1FEBD020174A070072A156 /* FunctionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionViewController.swift; sourceTree = "<group>"; };
+		1E1FEBD120174A070072A156 /* FunctionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FunctionViewController.xib; sourceTree = "<group>"; };
 		1E751D4D1FC822EA00B0D9CD /* ReactSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E751D501FC822EA00B0D9CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E751D521FC822EA00B0D9CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -103,6 +117,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E1FEBC6201728530072A156 /* DemoVC */ = {
+			isa = PBXGroup;
+			children = (
+				1E9981F12015E61000E6ABA8 /* PromiseKitViewController.swift */,
+				1E9981F22015E61000E6ABA8 /* PromiseKitViewController.xib */,
+				1E9981F52015EF6400E6ABA8 /* SearchViewController.swift */,
+				1E9981F62015EF6400E6ABA8 /* SearchViewController.xib */,
+				1E1FEBCC201731C00072A156 /* SimpleValidationViewController.swift */,
+				1E1FEBCD201731C00072A156 /* SimpleValidationViewController.xib */,
+				1E1FEBD020174A070072A156 /* FunctionViewController.swift */,
+				1E1FEBD120174A070072A156 /* FunctionViewController.xib */,
+			);
+			path = DemoVC;
+			sourceTree = "<group>";
+		};
+		1E1FEBC7201728C60072A156 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				1E1FEBC8201728D20072A156 /* SafeCollection.swift */,
+				1E1FEBCA201729020072A156 /* CellReusable.swift */,
+			);
+			path = Files;
+			sourceTree = "<group>";
+		};
 		1E751D441FC822EA00B0D9CD = {
 			isa = PBXGroup;
 			children = (
@@ -128,6 +166,8 @@
 		1E751D4F1FC822EA00B0D9CD /* ReactSwift */ = {
 			isa = PBXGroup;
 			children = (
+				1E1FEBC7201728C60072A156 /* Files */,
+				1E1FEBC6201728530072A156 /* DemoVC */,
 				1E751D501FC822EA00B0D9CD /* AppDelegate.swift */,
 				1E751D521FC822EA00B0D9CD /* ViewController.swift */,
 				1E751D541FC822EA00B0D9CD /* Main.storyboard */,
@@ -136,10 +176,6 @@
 				1E751D5C1FC822EB00B0D9CD /* Info.plist */,
 				1EF4EC5B20107F1300755C02 /* ApiClient.swift */,
 				1E9981EF2015D73400E6ABA8 /* MemoryRelease.swift */,
-				1E9981F12015E61000E6ABA8 /* PromiseKitViewController.swift */,
-				1E9981F22015E61000E6ABA8 /* PromiseKitViewController.xib */,
-				1E9981F52015EF6400E6ABA8 /* SearchViewController.swift */,
-				1E9981F62015EF6400E6ABA8 /* SearchViewController.xib */,
 			);
 			path = ReactSwift;
 			sourceTree = "<group>";
@@ -150,6 +186,7 @@
 				1E751D651FC822EB00B0D9CD /* ReactSwiftTests.swift */,
 				1E751D671FC822EB00B0D9CD /* Info.plist */,
 				1ED2D3B51FCD25FA0098B9B1 /* RxSwift.swift */,
+				1E1FEBC4201720BC0072A156 /* RxSwiftWhyUse.swift */,
 			);
 			path = ReactSwiftTests;
 			sourceTree = "<group>";
@@ -303,8 +340,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E751D5B1FC822EA00B0D9CD /* LaunchScreen.storyboard in Resources */,
+				1E1FEBD320174A070072A156 /* FunctionViewController.xib in Resources */,
 				1E751D581FC822EA00B0D9CD /* Assets.xcassets in Resources */,
 				1E751D561FC822EA00B0D9CD /* Main.storyboard in Resources */,
+				1E1FEBCF201731C00072A156 /* SimpleValidationViewController.xib in Resources */,
 				1E9981F82015EF6400E6ABA8 /* SearchViewController.xib in Resources */,
 				1E9981F42015E61000E6ABA8 /* PromiseKitViewController.xib in Resources */,
 			);
@@ -563,12 +602,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E1FEBCB201729020072A156 /* CellReusable.swift in Sources */,
 				1E9981F72015EF6400E6ABA8 /* SearchViewController.swift in Sources */,
+				1E1FEBCE201731C00072A156 /* SimpleValidationViewController.swift in Sources */,
 				1E9981F02015D73400E6ABA8 /* MemoryRelease.swift in Sources */,
 				1E9981F32015E61000E6ABA8 /* PromiseKitViewController.swift in Sources */,
 				1E751D531FC822EA00B0D9CD /* ViewController.swift in Sources */,
 				1E751D511FC822EA00B0D9CD /* AppDelegate.swift in Sources */,
 				1EF4EC5C20107F1300755C02 /* ApiClient.swift in Sources */,
+				1E1FEBD220174A070072A156 /* FunctionViewController.swift in Sources */,
+				1E1FEBC9201728D20072A156 /* SafeCollection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,6 +619,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E1FEBC5201720BC0072A156 /* RxSwiftWhyUse.swift in Sources */,
 				1E751D661FC822EB00B0D9CD /* ReactSwiftTests.swift in Sources */,
 				1ED2D3B61FCD25FA0098B9B1 /* RxSwift.swift in Sources */,
 			);
@@ -740,7 +784,7 @@
 				DEVELOPMENT_TEAM = KAYVKT322E;
 				INFOPLIST_FILE = ReactSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mhfq.rxSwfit.ReactSwift;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mhfq.ReactSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -756,7 +800,7 @@
 				DEVELOPMENT_TEAM = KAYVKT322E;
 				INFOPLIST_FILE = ReactSwift/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.mhfq.rxSwfit.ReactSwift;
+				PRODUCT_BUNDLE_IDENTIFIER = com.mhfq.ReactSwift;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
