@@ -18,9 +18,11 @@ import RxDataSources
 class ViewController: UITableViewController {
     
     let items:[[String: String]] = [
-        ["SearchViewController":"haha"],
-        ["SimpleValidationViewController":"用户登录校验"],
-        ["FunctionViewController":"函数响应式编程"]
+        ["SearchViewController": "haha"],
+        ["SimpleValidationViewController": "用户登录校验"],
+        ["FunctionViewController": "函数响应式编程"],
+        ["OperatorViewController": "操作符"],
+        ["RxDataSourcesViewController": "dataSources"]
         ]
     
     override func viewDidLoad() {
