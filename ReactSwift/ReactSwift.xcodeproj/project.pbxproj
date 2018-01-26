@@ -15,6 +15,7 @@
 		1E1FEBCF201731C00072A156 /* SimpleValidationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E1FEBCD201731C00072A156 /* SimpleValidationViewController.xib */; };
 		1E1FEBD220174A070072A156 /* FunctionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E1FEBD020174A070072A156 /* FunctionViewController.swift */; };
 		1E1FEBD320174A070072A156 /* FunctionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E1FEBD120174A070072A156 /* FunctionViewController.xib */; };
+		1E2F6711201B2E0F00D3A9CB /* ReactorKitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E2F6710201B2E0F00D3A9CB /* ReactorKitViewController.swift */; };
 		1E5907D620183C8300A8E32C /* BBExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5907D520183C8300A8E32C /* BBExtension.swift */; };
 		1E5907D820184E0100A8E32C /* SubjectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5907D720184E0100A8E32C /* SubjectViewController.swift */; };
 		1E5907DA201854E900A8E32C /* OperatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5907D9201854E900A8E32C /* OperatorViewController.swift */; };
@@ -68,6 +69,7 @@
 		1E1FEBCD201731C00072A156 /* SimpleValidationViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SimpleValidationViewController.xib; sourceTree = "<group>"; };
 		1E1FEBD020174A070072A156 /* FunctionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FunctionViewController.swift; sourceTree = "<group>"; };
 		1E1FEBD120174A070072A156 /* FunctionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FunctionViewController.xib; sourceTree = "<group>"; };
+		1E2F6710201B2E0F00D3A9CB /* ReactorKitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReactorKitViewController.swift; sourceTree = "<group>"; };
 		1E5907D520183C8300A8E32C /* BBExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BBExtension.swift; sourceTree = "<group>"; };
 		1E5907D720184E0100A8E32C /* SubjectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectViewController.swift; sourceTree = "<group>"; };
 		1E5907D9201854E900A8E32C /* OperatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OperatorViewController.swift; sourceTree = "<group>"; };
@@ -152,6 +154,7 @@
 				1E5907DC201863E900A8E32C /* ImagePicker ViewController.xib */,
 				1E5907E420186D1F00A8E32C /* RxDataSourcesViewController.swift */,
 				1E5907E92018A6C200A8E32C /* RxDataSourcesTableViewController.xib */,
+				1E2F6710201B2E0F00D3A9CB /* ReactorKitViewController.swift */,
 			);
 			path = DemoVC;
 			sourceTree = "<group>";
@@ -639,6 +642,7 @@
 				1E1FEBCE201731C00072A156 /* SimpleValidationViewController.swift in Sources */,
 				1E5907E3201868F600A8E32C /* UIImagePickerController+Rx.swift in Sources */,
 				1E5907DA201854E900A8E32C /* OperatorViewController.swift in Sources */,
+				1E2F6711201B2E0F00D3A9CB /* ReactorKitViewController.swift in Sources */,
 				1E9981F02015D73400E6ABA8 /* MemoryRelease.swift in Sources */,
 				1E9981F32015E61000E6ABA8 /* PromiseKitViewController.swift in Sources */,
 				1E751D531FC822EA00B0D9CD /* ViewController.swift in Sources */,
