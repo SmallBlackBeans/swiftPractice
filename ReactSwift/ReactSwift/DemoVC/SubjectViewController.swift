@@ -29,7 +29,8 @@ class SubjectViewController: UIViewController {
     
     // MARK: - Variable
     /**
-        如果我们声明的变量需要提供 Rx 支持，那就选用 Variable 这个类型 它不会产生 error 事件
+        如果我们声明的变量需要提供 Rx 支持，那就选用 Variable 这个类型
+        它不会产生 error 事件 无需手动给它发送.complete事件表示完成
         在 deinit 时，会发出一个 completed 事件
      */
     var model: Model? = nil {
@@ -49,6 +50,7 @@ class SubjectViewController: UIViewController {
     
     
     
+    //表达一个“响应式”值的语义
     var variableModel: Variable<Model?> = Variable(nil)
     
     override func viewDidLoad() {
@@ -57,7 +59,8 @@ class SubjectViewController: UIViewController {
         
         model = getModel()
         
-        variableModel.asObservable()
+        variableModel
+            .asObservable()
             .subscribe(onNext: { [weak self] (model) in
                 self?.updateUI(with: model)
             })

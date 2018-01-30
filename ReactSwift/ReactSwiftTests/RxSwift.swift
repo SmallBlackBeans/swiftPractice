@@ -80,6 +80,13 @@ class RxSwift: XCTestCase {
         }
     }
     
+    
+    func testShare() {
+        example("share") {
+   
+        }
+    }
+    
     // MARK: - 在一个数组的基础上创建一个序列
     func testtoObservable() {
         example("Observable.from") {
@@ -535,7 +542,7 @@ class RxSwift: XCTestCase {
     
     
     private func example(_ str: String, _ block:()->()){
-        print("----\(str)example----")
+        print("----\(str) example----")
         block()
         print("-------\(str)-------")
     }
