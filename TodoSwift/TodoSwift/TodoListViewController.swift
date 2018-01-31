@@ -7,37 +7,38 @@
 //
 
 import UIKit
+import RxSwift
 import Alamofire
 
 class TodoListViewController: UITableViewController {
     
     var todoList = [Todo]()
     
+    let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        Alamofire.request(TodoRouter.get(nil))
-            .responseJSON { (response) in
-                guard response.result.error == nil  else {
-                    print(response.result.error!)
-                    return
+        
+   
+        let todoId: Int? = nil
+        
+        Observable.of(todoId)//Observable
+            .map {
+                return TodoRouter.get($0)
+            }
+            .flatMap { router in//flatMap会把原序列中的每一个事件，变成一个新的Observable
+                return Todo.getList(from: router)
+            }
+            .subscribe(onNext: { (todos: [[String: Any]]) in
+                //使用Array的flatMap方法，去掉了数组中所有的nil
+                self.todoList = todos.flatMap {
+                    Todo.init(json: $0)
                 }
-                
-                guard let todos = response.result.value as? [[String: Any]] else {
-                    print("Cannot read the Todo list from the server.")
-                    return
-                }
-                todos.reversed().forEach {
-                    guard let todo = Todo.init(json: $0) else {
-                        return
-                    }
-                    self.todoList.append(todo)
-                }
-                
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
-                }
-        }
+                self.tableView.reloadData()
+            }, onError: { (error) in
+                print(error.localizedDescription)
+            })
+            .disposed(by: disposeBag)
     }
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
