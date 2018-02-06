@@ -89,10 +89,11 @@ class SearchViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     
-        
+        UIColor.white
         // Do any additional setup after loading the view.
     }
     
+
     
     func searchGitHUb(query: String) -> Observable<[Repository]> {
         return Observable.just([])
@@ -111,6 +112,7 @@ class SearchViewController: UIViewController {
         
         // MARK: - KVO
         let user = User()
+
         user.rx.observe(String.self, #keyPath(User.name))
             .subscribe { (newValue) in
                 
