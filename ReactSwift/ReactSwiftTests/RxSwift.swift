@@ -244,7 +244,7 @@ class RxSwift: XCTestCase {
 //            writeSequenceToConsole(name: "2", sequence: variable.asObservable()).disposed(by: disposeBag)
 //            variable.value = "c"
 //            variable.value = "d"
-            
+
             let variable = Variable(1)//默认1
             variable.asObservable().subscribe({ (event) in
                 print(event)
@@ -258,7 +258,7 @@ class RxSwift: XCTestCase {
     func testMap() {
         example("map") {
             let originalSequence = Observable<Int>.of(1, 2, 3)
-            
+
             _ = originalSequence.map({ (i) -> Int in
                 i * 2
             }).subscribe({ (e) in
