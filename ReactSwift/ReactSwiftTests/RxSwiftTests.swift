@@ -13,7 +13,7 @@ import RxOptional
 
 
 //https://github.com/ReactiveX/RxSwift/blob/f639ff450487340a18931a7dbe3d5c8a0976be7b/CHANGELOG.md
-class RxSwift: XCTestCase {
+class RxSwiftTests: XCTestCase {
     
     static let disposeBag = DisposeBag()
     

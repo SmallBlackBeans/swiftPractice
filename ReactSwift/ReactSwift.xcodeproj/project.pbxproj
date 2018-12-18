@@ -29,6 +29,7 @@
 		1E5907E3201868F600A8E32C /* UIImagePickerController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5907E2201868F600A8E32C /* UIImagePickerController+Rx.swift */; };
 		1E5907E620186D1F00A8E32C /* RxDataSourcesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E5907E420186D1F00A8E32C /* RxDataSourcesViewController.swift */; };
 		1E5907EB2018A6C200A8E32C /* RxDataSourcesTableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E5907E92018A6C200A8E32C /* RxDataSourcesTableViewController.xib */; };
+		1E6B46DD21C898D600ADB9A2 /* ObservableConvertibleType+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E6B46DC21C898D600ADB9A2 /* ObservableConvertibleType+Extension.swift */; };
 		1E751D511FC822EA00B0D9CD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E751D501FC822EA00B0D9CD /* AppDelegate.swift */; };
 		1E751D531FC822EA00B0D9CD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E751D521FC822EA00B0D9CD /* ViewController.swift */; };
 		1E751D561FC822EA00B0D9CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E751D541FC822EA00B0D9CD /* Main.storyboard */; };
@@ -41,7 +42,7 @@
 		1E9981F42015E61000E6ABA8 /* PromiseKitViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E9981F22015E61000E6ABA8 /* PromiseKitViewController.xib */; };
 		1E9981F72015EF6400E6ABA8 /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E9981F52015EF6400E6ABA8 /* SearchViewController.swift */; };
 		1E9981F82015EF6400E6ABA8 /* SearchViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1E9981F62015EF6400E6ABA8 /* SearchViewController.xib */; };
-		1ED2D3B61FCD25FA0098B9B1 /* RxSwift.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED2D3B51FCD25FA0098B9B1 /* RxSwift.swift */; };
+		1ED2D3B61FCD25FA0098B9B1 /* RxSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED2D3B51FCD25FA0098B9B1 /* RxSwiftTests.swift */; };
 		1EF4EC5C20107F1300755C02 /* ApiClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EF4EC5B20107F1300755C02 /* ApiClient.swift */; };
 		9AFDA659052B452C5C5A2E4E /* Pods_ReactSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1700DE1AABDED4904964CEBC /* Pods_ReactSwift.framework */; };
 		DF4E66FC1610AE7CFA13DFB4 /* Pods_ReactSwift_ReactSwiftUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A29F4E2E55098261014377FB /* Pods_ReactSwift_ReactSwiftUITests.framework */; };
@@ -87,6 +88,7 @@
 		1E5907E2201868F600A8E32C /* UIImagePickerController+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImagePickerController+Rx.swift"; sourceTree = "<group>"; };
 		1E5907E420186D1F00A8E32C /* RxDataSourcesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxDataSourcesViewController.swift; sourceTree = "<group>"; };
 		1E5907E92018A6C200A8E32C /* RxDataSourcesTableViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RxDataSourcesTableViewController.xib; sourceTree = "<group>"; };
+		1E6B46DC21C898D600ADB9A2 /* ObservableConvertibleType+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ObservableConvertibleType+Extension.swift"; sourceTree = "<group>"; };
 		1E751D4D1FC822EA00B0D9CD /* ReactSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E751D501FC822EA00B0D9CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E751D521FC822EA00B0D9CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -105,7 +107,7 @@
 		1E9981F22015E61000E6ABA8 /* PromiseKitViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PromiseKitViewController.xib; sourceTree = "<group>"; };
 		1E9981F52015EF6400E6ABA8 /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		1E9981F62015EF6400E6ABA8 /* SearchViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchViewController.xib; sourceTree = "<group>"; };
-		1ED2D3B51FCD25FA0098B9B1 /* RxSwift.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwift.swift; sourceTree = "<group>"; };
+		1ED2D3B51FCD25FA0098B9B1 /* RxSwiftTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RxSwiftTests.swift; sourceTree = "<group>"; };
 		1EF4EC5B20107F1300755C02 /* ApiClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiClient.swift; sourceTree = "<group>"; };
 		2F52DF6709BFE1A936A770FF /* Pods-ReactSwift-ReactSwiftTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactSwift-ReactSwiftTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ReactSwift-ReactSwiftTests/Pods-ReactSwift-ReactSwiftTests.debug.xcconfig"; sourceTree = "<group>"; };
 		35EAA29AFF579E15AAE12A38 /* Pods-ReactSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ReactSwift.release.xcconfig"; path = "Pods/Target Support Files/Pods-ReactSwift/Pods-ReactSwift.release.xcconfig"; sourceTree = "<group>"; };
@@ -218,6 +220,7 @@
 				1E751D5C1FC822EB00B0D9CD /* Info.plist */,
 				1EF4EC5B20107F1300755C02 /* ApiClient.swift */,
 				1E9981EF2015D73400E6ABA8 /* MemoryRelease.swift */,
+				1E6B46DC21C898D600ADB9A2 /* ObservableConvertibleType+Extension.swift */,
 			);
 			path = ReactSwift;
 			sourceTree = "<group>";
@@ -227,7 +230,7 @@
 			children = (
 				1E751D651FC822EB00B0D9CD /* ReactSwiftTests.swift */,
 				1E751D671FC822EB00B0D9CD /* Info.plist */,
-				1ED2D3B51FCD25FA0098B9B1 /* RxSwift.swift */,
+				1ED2D3B51FCD25FA0098B9B1 /* RxSwiftTests.swift */,
 				1E1FEBC4201720BC0072A156 /* RxSwiftWhyUse.swift */,
 			);
 			path = ReactSwiftTests;
@@ -277,7 +280,6 @@
 				1E751D4A1FC822EA00B0D9CD /* Frameworks */,
 				1E751D4B1FC822EA00B0D9CD /* Resources */,
 				DE9902F6D4F850906D08A030 /* [CP] Embed Pods Frameworks */,
-				755297D09F28087B0FA87A28 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -297,7 +299,6 @@
 				1E751D5E1FC822EB00B0D9CD /* Frameworks */,
 				1E751D5F1FC822EB00B0D9CD /* Resources */,
 				782C5DA271DCE4A199DF2D4D /* [CP] Embed Pods Frameworks */,
-				6AA50E6D8BA4C05606DD5196 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -318,7 +319,6 @@
 				1E751D691FC822EB00B0D9CD /* Frameworks */,
 				1E751D6A1FC822EB00B0D9CD /* Resources */,
 				68509068076DF54DAAE38D91 /* [CP] Embed Pods Frameworks */,
-				8BCFD3BDE361445F49166E17 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -444,6 +444,7 @@
 				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxOptional/RxOptional.framework",
@@ -460,6 +461,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxOptional.framework",
@@ -469,36 +471,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactSwift-ReactSwiftUITests/Pods-ReactSwift-ReactSwiftUITests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		6AA50E6D8BA4C05606DD5196 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactSwift-ReactSwiftTests/Pods-ReactSwift-ReactSwiftTests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		755297D09F28087B0FA87A28 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactSwift/Pods-ReactSwift-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		77CD9CEA9F81D74D864830D8 /* [CP] Check Pods Manifest.lock */ = {
@@ -534,6 +506,7 @@
 				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxOptional/RxOptional.framework",
@@ -552,6 +525,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxOptional.framework",
@@ -563,21 +537,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactSwift-ReactSwiftTests/Pods-ReactSwift-ReactSwiftTests-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		8BCFD3BDE361445F49166E17 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ReactSwift-ReactSwiftUITests/Pods-ReactSwift-ReactSwiftUITests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		B8E1095C28C34EC04D7B90FD /* [CP] Check Pods Manifest.lock */ = {
@@ -613,6 +572,7 @@
 				"${BUILT_PRODUCTS_DIR}/ReactiveSwift/ReactiveSwift.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
 				"${BUILT_PRODUCTS_DIR}/RxAlamofire/RxAlamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/RxAtomic/RxAtomic.framework",
 				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
 				"${BUILT_PRODUCTS_DIR}/RxDataSources/RxDataSources.framework",
 				"${BUILT_PRODUCTS_DIR}/RxOptional/RxOptional.framework",
@@ -629,6 +589,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ReactiveSwift.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAlamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxAtomic.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxDataSources.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxOptional.framework",
@@ -663,6 +624,7 @@
 				1E5907E620186D1F00A8E32C /* RxDataSourcesViewController.swift in Sources */,
 				1E5907D620183C8300A8E32C /* BBExtension.swift in Sources */,
 				1E751D511FC822EA00B0D9CD /* AppDelegate.swift in Sources */,
+				1E6B46DD21C898D600ADB9A2 /* ObservableConvertibleType+Extension.swift in Sources */,
 				1E50CE1F20206D8A00FC187C /* PhotoCollectionViewController.swift in Sources */,
 				1EF4EC5C20107F1300755C02 /* ApiClient.swift in Sources */,
 				1E1FEBD220174A070072A156 /* FunctionViewController.swift in Sources */,
@@ -677,7 +639,7 @@
 			files = (
 				1E1FEBC5201720BC0072A156 /* RxSwiftWhyUse.swift in Sources */,
 				1E751D661FC822EB00B0D9CD /* ReactSwiftTests.swift in Sources */,
-				1ED2D3B61FCD25FA0098B9B1 /* RxSwift.swift in Sources */,
+				1ED2D3B61FCD25FA0098B9B1 /* RxSwiftTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

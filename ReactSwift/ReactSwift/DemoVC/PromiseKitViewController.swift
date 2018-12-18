@@ -19,30 +19,31 @@ class PromiseKitViewController: UIViewController {
 
     
     func fetchData() {
-        Promise<Data> { (fulfill, reject) in
+        Promise<Data> {result in
             URLSession.shared
                 .dataTask(with: URL.init(string: "http://www.baidu.com")!, completionHandler: { (data, _, error) in
                     if let data = data {
-                        fulfill(data)
+                        result.fulfill(data)
                     } else if let error = error {
-                        reject(error)
+                        result.reject(error)
                     }
                 })
-            .resume()
-        }
+                .resume()
+            }
             .then { (data) in
-                Promise<Any> { (fulfill, reject) in
+                Promise<Any> { result in
                     do {
                         let json = try JSONSerialization.jsonObject(with: data, options: .allowFragments)
-                        fulfill(json)
+                        result.fulfill(json)
                     } catch {
-                        fulfill(error)
+                        result.fulfill(error)
                     }
                 }
-        }
-            .then { (json) in
+            }
+            .then({ json -> Promise<Void>  in
                 print(json)
-        }
+                return Promise()
+            })
     }
 
 }
