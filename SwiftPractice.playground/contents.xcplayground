@@ -35,5 +35,6 @@
         <page name='swift4 新特性'/>
         <page name='派生model编解码'/>
         <page name='model兼容多个版本的API'/>
+        <page name='复习'/>
     </pages>
 </playground>
