@@ -124,12 +124,11 @@ while let value = iter.next() {
 
 
 
+let doubleArray = buffer.map { $0 * 2 }
 
-let doubleArray = iter.map { $0 * 2 }
+let evenArray = buffer.filter { $0 % 2 == 0 }
 
-let evenArray = iter.filter { $0 % 2 == 0 }
-
-let sum = iter.reduce(0) {
+let sum = buffer.reduce(0) {
     $0 + $1
 }
 
