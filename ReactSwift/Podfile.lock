@@ -3,19 +3,19 @@ PODS:
   - Differentiator (3.1.0)
   - "NSObject+Rx (4.4.1)":
     - RxSwift (~> 4.3)
-  - ObjectMapper (3.4.1)
-  - PromiseKit (6.7.0):
-    - PromiseKit/CorePromise (= 6.7.0)
-    - PromiseKit/Foundation (= 6.7.0)
-    - PromiseKit/UIKit (= 6.7.0)
-  - PromiseKit/CorePromise (6.7.0)
-  - PromiseKit/Foundation (6.7.0):
+  - ObjectMapper (3.4.2)
+  - PromiseKit (6.7.1):
+    - PromiseKit/CorePromise (= 6.7.1)
+    - PromiseKit/Foundation (= 6.7.1)
+    - PromiseKit/UIKit (= 6.7.1)
+  - PromiseKit/CorePromise (6.7.1)
+  - PromiseKit/Foundation (6.7.1):
     - PromiseKit/CorePromise
-  - PromiseKit/UIKit (6.7.0):
+  - PromiseKit/UIKit (6.7.1):
     - PromiseKit/CorePromise
-  - ReactiveSwift (3.1.0):
-    - Result (~> 3.2)
-  - Result (3.2.4)
+  - ReactiveSwift (4.0.0):
+    - Result (~> 4.0)
+  - Result (4.1.0)
   - RxAlamofire (4.3.0):
     - RxAlamofire/Core (= 4.3.0)
   - RxAlamofire/Core (4.3.0):
@@ -42,17 +42,17 @@ PODS:
   - SwiftyJSON (4.2.0)
 
 DEPENDENCIES:
-  - Alamofire (~> 4.5)
+  - Alamofire
   - "NSObject+Rx"
   - ObjectMapper
   - PromiseKit
-  - ReactiveSwift (~> 3.0)
+  - ReactiveSwift
   - RxAlamofire
   - RxBlocking (~> 4.0)
-  - RxCocoa (~> 4.0)
-  - RxDataSources (~> 3.0)
+  - RxCocoa
+  - RxDataSources
   - RxOptional
-  - RxSwift (~> 4.0)
+  - RxSwift
   - RxTest (~> 4.0)
   - SwiftyJSON
 
@@ -79,10 +79,10 @@ SPEC CHECKSUMS:
   Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
   Differentiator: be49ca3408f0ecfc761e4c7763d20c62be01b9ad
   "NSObject+Rx": 9884a92f19b610795c431e10b4e601913b59c9e9
-  ObjectMapper: 5311bd50ca732930959e7ca1a2de43ab823a5ced
-  PromiseKit: 453ddcc947fe7b302f3ef41882b81d31c554df7f
-  ReactiveSwift: 5b26d2e988fe0eed2daf48c4054d1de74db50184
-  Result: d2d07204ce72856f1fd9130bbe42c35a7b0fea10
+  ObjectMapper: 0d4402610f4e468903ae64629eec4784531e5c51
+  PromiseKit: ef376fb8b4e92edfeb66bd403b983eaa07fbde0c
+  ReactiveSwift: a2bb9ace428a109e9c0209615645d9d286c8c433
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
   RxAlamofire: 09624d0f2d48ed8b686e4eb4cf68e28cbd2df556
   RxAtomic: eacf60db868c96bfd63320e28619fe29c179656f
   RxBlocking: 138ad53217434444d6eeeb4fb406a45431d92e31
@@ -93,6 +93,6 @@ SPEC CHECKSUMS:
   RxTest: 19d03286bdc0a3aaea5d61d4cde31fdf4bb8a5ba
   SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
 
-PODFILE CHECKSUM: 5c7940daa3eadae4cad80715c4a55aa09763dec1
+PODFILE CHECKSUM: 9eef3f599a58663003755e12200cc400e5cf4a57
 
 COCOAPODS: 1.5.3

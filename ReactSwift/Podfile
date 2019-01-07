@@ -5,13 +5,13 @@ target 'ReactSwift' do
 use_frameworks!
 
 
-pod 'ReactiveSwift', '~> 3.0'
+pod 'ReactiveSwift'
 
-pod 'RxSwift',    '~> 4.0'
-pod 'RxCocoa',    '~> 4.0'
+pod 'RxSwift'
+pod 'RxCocoa'
 pod 'RxOptional'
 pod 'NSObject+Rx'
-pod 'RxDataSources', '~> 3.0'
+pod 'RxDataSources'
 
 
 
@@ -21,7 +21,7 @@ pod 'ObjectMapper'
 
 
 pod 'RxAlamofire'
-pod 'Alamofire', '~> 4.5'
+pod 'Alamofire'
 pod 'SwiftyJSON'
 
 

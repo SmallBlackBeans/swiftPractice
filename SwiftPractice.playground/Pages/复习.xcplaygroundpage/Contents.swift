@@ -1,6 +1,7 @@
 //: [Previous](@previous)
 
 import Foundation
+import UIKit
 
 var str = "Hello, playground"
 
@@ -245,5 +246,147 @@ extension SomeClass {
 let anotherSelector = #selector(SomeClass.doSomething(_:) as (SomeClass) -> (String) -> Void)
 
 
+
+
+let arr = [1,2,3]
+arr.allSatisfy({$0 > 0})//true
+
+
+let possibleNumbers = ["1", "2", "three", "///4///", "5", "Fish"]
+let mapped: [Int?] = possibleNumbers.map { Int($0) }
+// [1, 2, nil, nil, 5, nil]
+let compactMapped: [Int] = possibleNumbers.compactMap { Int($0) }
+// [1, 2, 5]
+
+
+
+//// 随机数组
+var numbers = [1, 2, 3, 4, 5, 6]
+let shuffledNumbers = numbers.shuffled()// 返回一个新的数组
+numbers.shuffle()
+
+
+
+/// static class
+/// static 方法不能重写
+
+
+/// lazy 只能修饰 var
+
+
+
+protocol Builder {}
+extension Builder {
+    public func with(configure: (inout Self) -> Void) -> Self {
+        var this = self
+        configure(&this)
+        return this
+    }
+}
+extension NSObject: Builder {}
+
+private let tableView = UITableView(frame: .zero, style: .plain).with { tableView in
+    tableView.backgroundColor = .white
+    tableView.separatorColor = .darkGray
+    tableView.separatorInset = UIEdgeInsets(top: 0, left: 0, bottom: 10.0, right: 0)
+    tableView.allowsMultipleSelection = true
+}
+
+
+
+/// @dynamicMemberLookup 动态查找成员 可以返回任意希望得到的数据 函数 nil 等
+@dynamicMemberLookup
+enum JSON {
+    case intValue(Int)
+    case stringValue(String)
+    case arrayValue(Array<JSON>)
+    case dictionaryValue(Dictionary<String, JSON>)
+    
+    var stringValue: String? {
+        if case .stringValue(let str) = self {
+            return str
+        }
+        return nil
+    }
+    
+    subscript(index: Int) -> JSON? {
+        if case .arrayValue(let arr) = self {
+            return index < arr.count ? arr[index] : nil
+        }
+        return nil
+    }
+    
+    subscript(key: String) -> JSON? {
+        if case .dictionaryValue(let dict) = self {
+            return dict[key]
+        }
+        return nil
+    }
+    
+    subscript(dynamicMember member: String) -> JSON? {
+        if case .dictionaryValue(let dict) = self {
+            return dict[member]
+        }
+        return nil
+    }
+}
+
+let json = JSON.intValue(1)
+json[0]?.name?.first?.stringValue
+/// 等价于
+json[0]?["name"]?["first"]?.stringValue
+
+class QOS {
+    let tableView: UITableView = UITableView.init(frame: .zero, style: .plain)
+    func main() {
+        /// 瞬间的
+        DispatchQueue.global(qos: .userInteractive).async {
+            self.tableView.reloadData()
+        }
+        
+        
+        /// 几乎瞬间的，打开文件,一个点击动作
+        DispatchQueue.global(qos: .userInitiated).async {
+            if let url = URL(string: "fileUrl") {
+                if let data = try? Data(contentsOf: url) {
+                    return
+                }
+            }
+        }
+        
+        
+        DispatchQueue.global(qos: .default).async {
+            /// 一般不用
+        }
+        
+        DispatchQueue.global(qos: .utility).async {
+           // 网络请求
+        }
+        
+        DispatchQueue.global(qos: .background).async {
+            /// 用户不可见的操作 ，数据备份...
+        }
+        
+        
+        let dispatchGroup = DispatchGroup()
+        dispatchGroup.enter()
+        self.doSomething {
+            dispatchGroup.leave()
+        }
+        
+        dispatchGroup.enter()
+        self.doSomething {
+            dispatchGroup.leave()
+        }
+        
+        dispatchGroup.notify(queue: .main) {
+            self.tableView.reloadData()
+        }
+        
+        
+    }
+    
+    func doSomething(_:()->()){}
+}
 
 

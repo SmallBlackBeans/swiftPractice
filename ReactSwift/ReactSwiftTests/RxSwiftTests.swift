@@ -83,7 +83,7 @@ class RxSwiftTests: XCTestCase {
     
     func testShare() {
         example("share") {
-   
+            
         }
     }
     
@@ -109,7 +109,7 @@ class RxSwiftTests: XCTestCase {
                 .addDisposableTo(RxSwift.disposeBag)
         }
     }
-
+    
     
     func testinterval() {
         example("interval") {
@@ -236,15 +236,15 @@ class RxSwiftTests: XCTestCase {
     //与其他Subject类型不同的是，Variable在释放的时候会发送completed事件，并且Variable对象永远不会发送error事件
     func testVariable() {
         example("variable") {
-//            let disposeBag = DisposeBag()
-//            let variable = Variable("z")
-//            writeSequenceToConsole(name: "1", sequence: variable.asObservable()).disposed(by: disposeBag)
-//            variable.value = "a"
-//            variable.value = "b"
-//            writeSequenceToConsole(name: "2", sequence: variable.asObservable()).disposed(by: disposeBag)
-//            variable.value = "c"
-//            variable.value = "d"
-
+            //            let disposeBag = DisposeBag()
+            //            let variable = Variable("z")
+            //            writeSequenceToConsole(name: "1", sequence: variable.asObservable()).disposed(by: disposeBag)
+            //            variable.value = "a"
+            //            variable.value = "b"
+            //            writeSequenceToConsole(name: "2", sequence: variable.asObservable()).disposed(by: disposeBag)
+            //            variable.value = "c"
+            //            variable.value = "d"
+            
             let variable = Variable(1)//默认1
             variable.asObservable().subscribe({ (event) in
                 print(event)
@@ -258,7 +258,7 @@ class RxSwiftTests: XCTestCase {
     func testMap() {
         example("map") {
             let originalSequence = Observable<Int>.of(1, 2, 3)
-
+            
             _ = originalSequence.map({ (i) -> Int in
                 i * 2
             }).subscribe({ (e) in
@@ -298,7 +298,7 @@ class RxSwiftTests: XCTestCase {
     // MARK: - 对 Observable 发射的每一项数据应用一个函数，然后按顺序依次发射每一个值
     func testScan() {
         example("scan") {
-
+            
             let sequenceToSum = Observable<Int>.of(0, 1, 2, 3, 4, 5)
             
             _ = sequenceToSum.scan(0, accumulator: { (acum, elem) -> Int in
@@ -364,21 +364,21 @@ class RxSwiftTests: XCTestCase {
     
     // MARK: - 当两个 Observables 中的任何一个发射了一个数据时，通过一个指定的函数组合每个Observable发射的最新数据（一共两个数据），然后发射这个函数的结果
     func testCombineLatest() {
-//        example("combineLatest") {
-//            let stringObj = PublishSubject<String>()
-//            let intObj = PublishSubject<Int>()
-//
-//            _ = Observable.combineLatest(intObj, stringObj, resultSelector: {
-//                "\($0) \($1)"
-//            }).subscribe({ (e) in
-//                print(e)
-//            })
-//
-//            intObj.onNext(1)
-//            stringObj.onNext("A")
-//            stringObj.onNext("B")
-//            intObj.onNext(2)
-//        }
+        //        example("combineLatest") {
+        //            let stringObj = PublishSubject<String>()
+        //            let intObj = PublishSubject<Int>()
+        //
+        //            _ = Observable.combineLatest(intObj, stringObj, resultSelector: {
+        //                "\($0) \($1)"
+        //            }).subscribe({ (e) in
+        //                print(e)
+        //            })
+        //
+        //            intObj.onNext(1)
+        //            stringObj.onNext("A")
+        //            stringObj.onNext("B")
+        //            intObj.onNext(2)
+        //        }
         
         
         example("combineLatest Array") {
@@ -417,7 +417,7 @@ class RxSwiftTests: XCTestCase {
         }
     }
     
-
+    
     
     
     
@@ -525,6 +525,42 @@ class RxSwiftTests: XCTestCase {
             .filterNil()
             .subscribe { (event) in
                 print(event)
+        }
+    }
+    
+    
+    enum DataError: Error {
+        case cantParseJSON
+    }
+    
+    func testSingle() {
+        getData().subscribe(onSuccess: { result in
+             print("JSON: ", result)
+        }) { (error) in
+            print("Error: ", error)
+        }
+    }
+    
+    func getData() -> Single<[String: Any]>{
+        return Single<[String: Any]>.create { single in
+            let url = URL(string: "http://www.baidu.com")!
+            let task = URLSession.shared.dataTask(with: url, completionHandler: { (data, response, error) in
+                if let error = error {
+                    single(.error(error))
+                    return
+                }
+                guard let data = data,
+                    let json = try? JSONSerialization.jsonObject(with: data, options: .mutableLeaves),
+                    let result = json as? [String: Any] else {
+                        single(.error(DataError.cantParseJSON))
+                        return
+                }
+                single(.success(result))
+            })
+            task.resume()
+            return Disposables.create {
+                task.cancel()
+            }
         }
     }
     
