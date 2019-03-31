@@ -224,7 +224,7 @@ extension Vector2D {
 //// 类型
 /// 命名型类型 类 结构体 枚举
 /// 复合型类型 元组 函数
-
+Optional
 
 
 //// 表达式
@@ -264,6 +264,8 @@ let compactMapped: [Int] = possibleNumbers.compactMap { Int($0) }
 var numbers = [1, 2, 3, 4, 5, 6]
 let shuffledNumbers = numbers.shuffled()// 返回一个新的数组
 numbers.shuffle()
+
+
 
 
 
